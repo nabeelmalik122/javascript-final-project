@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Recommendation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        margin: 0;
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #003366;
+        padding: 15px 30px;
+        border-radius: 8px;
+        color: white;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+      .search-container input {
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        width: 220px;
+      }
+      .search-container button {
+        padding: 8px 14px;
+        margin-left: 5px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      #btnSearch {
+        background: #ff9900;
+        color: white;
+      }
+      #btnClear {
+        background: #e74c3c;
+        color: white;
+      }
+      #result {
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter beach, temple, or country"
+        />
+        <button id="btnSearch" type="button">Search</button>
+        <button id="btnClear" type="button">Clear</button>
+      </div>
+    </nav>
+    <div id="result"></div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
